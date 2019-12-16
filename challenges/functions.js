@@ -7,7 +7,8 @@
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
 function consume(a,b,cb){
-  
+
+  return cb(a);
 }
 
 

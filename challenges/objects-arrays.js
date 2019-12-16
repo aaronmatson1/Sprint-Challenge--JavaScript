@@ -79,7 +79,18 @@ const graduates = [
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array. This will be an array of strings.
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = list.sort((a, b) => (a.university > b.university) ? 1 : -1)
+
+const universities = graduates
+  .map(function(school) {
+    return school.university;
+  }).sort();
+
+  console.log(universities);
+
+//const universities = graduates.sort();
+//console.log(universities);
+
+
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
 
 The resulting contact information strings should have a space between the first name and the email, like this:
@@ -118,7 +129,15 @@ const zooAnimals = [
 The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
+
+
 const displayNames = [];
+const forEach(zooAnimals,cb) => {
+  for (let i = 0; i < zooAnimals.length; i++;){
+    cb(zooAnimals[i], i);
+  }
+};
+forEach(zooAnimals, function())
 console.log(displayNames);
 
 /* Request 2: .map()
